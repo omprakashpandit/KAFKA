@@ -1,0 +1,16 @@
+#Download 
+===========
+https://dlcdn.apache.org/kafka/3.2.0/kafka_2.13-3.4.0.tgz 
+copy into C:\drive only
+
+#Start Apache Zookeeper-
+=========================
+D:\kafka_2.12-0.10.2.1>.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+
+#Start Apache Kafka-
+======================
+D:\kafka_2.12-0.10.2.1>.\bin\windows\kafka-server-start.bat .\config\server.properties
+
+#Start consumer(Change the Topic Name Always)
+===============
+D:\kafka_2.12-0.10.2.1>.\bin\windows\kafka-console-consumer.bat --topic wikimedia_recentchange --from-beginning --bootstrap-server localhost:9092
